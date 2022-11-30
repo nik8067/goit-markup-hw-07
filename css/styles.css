@@ -260,9 +260,6 @@ button {
     padding-top: 94px;
     padding-bottom: 94px;
 }
-.content-title {
-
-}
 .content-subtitle {
     justify-content: center;
     display: flex;
@@ -330,8 +327,6 @@ background-image: url("../images/astronaut.svg");
 /***-----Позиціонування---------------***/
 .position-photo {
     position: relative;
-}
-.position-title {
 }
 .position-uptitle {
     position: absolute;
@@ -420,9 +415,6 @@ background-image: url("../images/astronaut.svg");
     display: flex;
     justify-content: center;
     gap: 10px;
-    }
-.contact-soc-item {
-    
     }
 .contact-soc-link {
     cursor: pointer;
@@ -570,9 +562,6 @@ background-image: url("../images/astronaut.svg");
     align-items: baseline;
     display: flex;
 }
-.footer-soc-title {
-   
-}
 .footer-title {
   display: flex;
   gap: 10px;
@@ -590,9 +579,6 @@ background-image: url("../images/astronaut.svg");
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--white-fons-color);
-}
-.footer-uptitle {
-
 }
 .footer-uptitle-link {
     cursor: pointer;
@@ -697,9 +683,6 @@ a {
     padding-bottom: 94px;
 }
 /**-------------Список моя сторінка*/
-.button-title {
-
-}
 .button-list {
      display: flex;
      justify-content: center;
@@ -740,9 +723,6 @@ a {
     background-color: var(--title-text-color);
 }*/
 /**---------Список Контекстне меню*/
-.benefits {
-
-}
 .benefits-title {
     display: flex;
     flex-wrap: wrap;
