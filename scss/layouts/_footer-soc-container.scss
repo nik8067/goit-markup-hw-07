@@ -7,10 +7,10 @@
   display: flex;
   gap: 10px;
 }
-.footer-soc-container {
+.footer-soc {
   margin-left: 70px;
 }
-.footer-subtitle {
+.footer-soc__title {
     margin-bottom: 20px;
     display: flex;
     font-weight: 700;
@@ -21,7 +21,7 @@
     text-transform: uppercase;
     color: var(--white-fons-color);
 }
-.footer-uptitle-link {
+.footer-title__link {
     cursor: pointer;
     width: 44px;
     height: 44px;
@@ -36,10 +36,10 @@
     background: var(--footer-soc-link);
     align-items: center;
 }
-.footer-soc-icon {
+.footer-title__icon {
     fill: var(--white-fons-color);
 }
-.footer-uptitle-link:hover,
-.footer-uptitle-link:focus {
+.footer-title__link:hover,
+.footer-title__link:focus {
     background-color: var(--title-text-color);
 }

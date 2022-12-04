@@ -5,7 +5,7 @@
 .page .page-header {
         border-bottom: 1px solid var(--border-fon-heder);
     }
-.main-nav {
+.main-logo {
     display: flex;
     align-items: center;
     }
@@ -14,10 +14,10 @@
     display: flex;
     margin-left: 93px;
 }
-.site-nav .item-nav + .item-nav {
+.site-nav .site-nav__item + .site-nav__item {
      margin-left: 50px;
 }
-.site-nav .link-nav {
+.site-nav .site-nav__link {
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -25,9 +25,6 @@
     margin-left: 40px;
 }*/
 /**---------------Site nav color*/
-.link-nav {
-    position: relative;
-}
 .current::after {
     position: absolute;
     width: 100%;
@@ -38,7 +35,10 @@
     background-color: var(--title-text-color);
     border-radius: 2px;
 }
-.site-nav .link-nav {
+.site-nav__link {
+    position: relative;
+}
+.site-nav .site-nav__link {
     display: block;
     font-weight: 500;
     font-size: 14px;
@@ -51,11 +51,11 @@
 
     color: var(--primary-text-color);
 }
-.site-nav .link-nav:hover,
-.site-nav .link-nav:focus {
+.site-nav .site-nav__link:hover,
+.site-nav .site-nav__link:focus {
     color: var(--title-text-color);
 }
-.site-nav .link-nav.current {
+.site-nav  .site-nav__link.current {
     color: var(--title-text-color);
 }
 
@@ -64,14 +64,14 @@
    display: flex;
    margin-left: auto;
 }
-.link-info {
+.info-nav__link {
     display: flex;
     text-decoration: none;
     align-items: center;
     justify-content: center;
     gap: 10px;
 }
-.info-icon {
+.info-nav__icon {
     fill: var(--accent-text-color);
     fill: currentColor;
 }
@@ -86,14 +86,14 @@
     background-position: center;
 }*/
 
-.info-nav .item-info + .item-info {
+.info-nav .info-nav__item + .info-nav__item {
     margin-left: 50px;
 }
 .info-nav .link-info {
     padding-top: 32px;
     padding-bottom: 32px;
 }
-.info-nav .link-info {
+.info-nav .info-nav__link {
     display: flex;
     font-weight: 500;
     font-size: 14px;
@@ -106,11 +106,11 @@
 
     color: var(--accent-text-color);
 }
-.info-nav .link-info:hover,
-.info-nav .link-info:focus .info-icon {
+.info-nav .info-nav__link:hover,
+.info-nav .info-nav__link:focus .info-nav__icon {
     color: var(--title-text-color);
 }
-.info-nav .link-info:hover,
-.info-nav .link-info:focus {
+.info-nav .info-nav__link:hover,
+.info-nav .info-nav__link:focus {
     color: var(--title-text-color);
 }

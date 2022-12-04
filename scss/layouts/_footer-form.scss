@@ -1,8 +1,8 @@
 /***------INPUT-FOOTER-------------*/
-.modal-footer {
+.footer-form__modal {
     display: flex;
 }
-.footer-text {
+.footer-form__text {
     display: flex;
     font-weight: 700;
     font-size: 14px;
@@ -11,11 +11,11 @@
     margin-bottom: 20px;
     color: var(--white-fons-color);
 }
-.footer-label {
+.footer-form__label {
     margin-right: 12px;
 }
-.footer-input:focus,
-.footer-input:hover {
+.footer-form__input:focus,
+.footer-form__input:hover {
   border-color: var(--button-fons-color);
   outline: var(--button-fons-color);
 }
@@ -32,7 +32,7 @@
 .footer-form {
    margin-left: auto;
 }
-.footer-input {
+.footer-form__input {
     width: 358px;
     height: 50px;
     font-size: 16px;
@@ -47,7 +47,7 @@
 
     background-color: #2F303A;
 }
-.footer-input::placeholder, .footer-input {
+.footer-form__input::placeholder, .footer-form__input {
     font-size: 16px;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);

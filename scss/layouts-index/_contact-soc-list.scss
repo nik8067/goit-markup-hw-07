@@ -1,10 +1,10 @@
 /**Список соцмереж в секції Наша команда**/
-.contact-soc-list {
+.contact-soc {
     display: flex;
     justify-content: center;
     gap: 10px;
     }
-.contact-soc-link {
+.contact-soc__link {
     cursor: pointer;
     width: 44px;
     height: 44px;
@@ -18,17 +18,17 @@
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-.contact-soc-icon {
+.contact-soc__icon {
     fill: var(--border-line);
     }
-.contact-soc-link:hover,
-.contact-soc-link:focus {
+.contact-soc__link:hover,
+.contact-soc__link:focus {
     background-color: var(--title-text-color);
     }
-.contact-soc-link:hover .contact-soc-icon {
+.contact-soc__link:hover .contact-soc__icon {
     fill: var(--white-fons-color);
 }
-.contact-soc-link:focus .contact-soc-icon {
+.contact-soc__link:focus .contact-soc__icon {
     fill: var(--white-fons-color);
 }
     /*.link {
