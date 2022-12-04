@@ -1,8 +1,8 @@
 /*----------Section-title---Чим ми займаємося---------*/
-.section {
+.position__section {
     padding-bottom: 94px;
 }
-.section-title {
+.position__title {
     margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.67;
@@ -10,21 +10,21 @@
     text-align: center;
     color: var(--primary-text-color);
 }
-.photo-title {
+.position__photo__title {
     display: block;
     max-width: 100%;
     height: auto;
 }
-.section-uptitle {
+.position__uptitle {
     display: flex;
     gap: 30px;
 }
 
 /***-----Позиціонування---------------***/
-.position-photo {
+.position__photo {
     position: relative;
 }
-.position-uptitle {
+.position__content {
     position: absolute;
     width: 370px;
     height: 70px;
@@ -44,11 +44,11 @@
     background-color: var(--portfolio-card-fon);
     color: var(--white-fons-color);
 }
-/*.image-title {
+/*.section__image {
     display: block;
     max-width: 100%;
     height: auto;
 }*/
-.section-title .image-title {
+.position__title .position__image {
     flex-basis: calc((100% - 90px) / 4);
 }

@@ -557,7 +557,7 @@ button {
   background-color: var(--black-fons-color);
 }
 
-.hero-title {
+.hero__title {
   width: 696px;
   margin: 0 auto;
   margin-bottom: 30px;
@@ -588,11 +588,11 @@ button {
 }
 
 /*----------Section-title---Чим ми займаємося---------*/
-.section {
+.position__section {
   padding-bottom: 94px;
 }
 
-.section-title {
+.position__title {
   margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.67;
@@ -601,13 +601,13 @@ button {
   color: var(--primary-text-color);
 }
 
-.photo-title {
+.position__photo__title {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-.section-uptitle {
+.position__uptitle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -615,11 +615,11 @@ button {
 }
 
 /***-----Позиціонування---------------***/
-.position-photo {
+.position__photo {
   position: relative;
 }
 
-.position-uptitle {
+.position__content {
   position: absolute;
   width: 370px;
   height: 70px;
@@ -643,12 +643,12 @@ button {
   color: var(--white-fons-color);
 }
 
-/*.image-title {
+/*.section__image {
     display: block;
     max-width: 100%;
     height: auto;
 }*/
-.section-title .image-title {
+.position__title .position__image {
   -ms-flex-preferred-size: calc((100% - 90px) / 4);
       flex-basis: calc((100% - 90px) / 4);
 }
@@ -659,7 +659,7 @@ button {
   padding-bottom: 94px;
 }
 
-.content-subtitle {
+.content__subtitle {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -669,12 +669,12 @@ button {
   gap: 30px;
 }
 
-.item {
+.content__item {
   -ms-flex-preferred-size: calc((100% - 90px) / 4);
       flex-basis: calc((100% - 90px) / 4);
 }
 
-.item::before {
+.content__item::before {
   margin-bottom: 30px;
   display: block;
   content: "";
@@ -685,23 +685,23 @@ button {
   background-color: var(--color-fon-icon);
 }
 
-.icon-antenna::before {
+.antenna::before {
   background-image: url("../images/antenna.svg");
 }
 
-.icon-clock::before {
+.clock::before {
   background-image: url("../images/clock.svg");
 }
 
-.icon-diagram::before {
+.diagram::before {
   background-image: url("../images/diagram.svg");
 }
 
-.icon-astronaut::before {
+.astronaut::before {
   background-image: url("../images/astronaut.svg");
 }
 
-.content-text {
+.content__text {
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.14;
@@ -710,7 +710,7 @@ button {
   color: var(--primary-text-color);
 }
 
-.content-subtitle .title {
+.content__subtitle .content__uptitle {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--accent-text-color);
