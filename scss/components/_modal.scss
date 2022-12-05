@@ -12,14 +12,15 @@
 
     background-color: var(--backdrop-color-fon);
 
-}
-.backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(0.5);
-}
+    &.is-hidden .modal {
+        transform: translate(-50%, -50%) scale(0.5);
+    }
+    
+    &.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+    }
 
-.backdrop.is-hidden {
-    opacity: 0;
-    pointer-events: none;
 }
 .modal {
     position: absolute;
@@ -66,13 +67,14 @@
     border: 1px solid var(--input-area-color);
     border-radius: 4px;
     resize: none;
-}
-.text-area::placeholder, .text-area {
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
 
+    &::placeholder, & {
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
+    
+    }
 }
 
 /***--------CheckBOX-------------------*/
@@ -138,14 +140,15 @@
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    background-color: var(--button-fons-color);
+    box-shadow: 0px 4px 4px var(--modal-btg-color);
+}
 }
 .modal-form .button {
     margin: 0 auto;
-}
-.button.push:hover,
-.button.push:focus {
-    background-color: var(--button-fons-color);
-    box-shadow: 0px 4px 4px var(--modal-btg-color);
 }
 /**-----------------------------------*/
 .input-wrapper {
@@ -158,18 +161,19 @@
     padding-left: 35px;
     cursor: pointer;
     border: 1px solid var(--input-area-color);
-}
-.modal-input:focus {
-    border-color: var(--title-text-color);
-}
-.modal-input:focus + .input-icon {
-    fill: var(--title-text-color);
-}
-.modal-input:not(:focus):not(:placeholder-shown):valid {
-    background-color: rgba(0, 128, 0, 0.276);
-}
-.modal-input:not(:focus):not(:placeholder-shown):invalid {
-    background-color: rgba(128, 36, 0, 0.276);
+
+    &:focus {
+        border-color: var(--title-text-color);
+    }
+    &:focus + .input-icon {
+        fill: var(--title-text-color);
+    }
+    &:not(:focus):not(:placeholder-shown):valid {
+        background-color: rgba(0, 128, 0, 0.276);
+    }
+    &:not(:focus):not(:placeholder-shown):invalid {
+        background-color: rgba(128, 36, 0, 0.276);
+    }
 }
 .input-icon {
     position: absolute;
@@ -193,12 +197,13 @@
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     background-color: var(--white-fons-color);
+
+    &:hover,
+    &:focus {
+    color: var(--title-text-color);
+    border: 1px solid var(--title-text-color);
+}
 }
 .modal-icon {
     fill: currentColor;
-}
-.button-modal:hover,
-.button-modal:focus {
-    color: var(--title-text-color);
-    border: 1px solid var(--title-text-color);
 }

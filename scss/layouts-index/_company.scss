@@ -12,6 +12,12 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+
+    &__uptitle:hover,
+    &__uptitle:focus .client-company__icon {
+        border-color: var(--title-text-color);
+        color: var(--title-text-color);
+    } 
 }
 .client-company__title {
     display: flex;
@@ -43,8 +49,3 @@
 .company-soc-icon:focus {
     fill: var(--title-text-color);
 }*/
-.client-company__uptitle:hover,
-.client-company__uptitle:focus .client-company__icon {
-    border-color: var(--title-text-color);
-    color: var(--title-text-color);
-}

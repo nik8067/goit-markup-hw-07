@@ -3,34 +3,35 @@
     display: flex;
     justify-content: center;
     gap: 10px;
-    }
-.contact-soc__link {
-    cursor: pointer;
-    width: 44px;
-    height: 44px;
-    background-color: var(--white-fons-color);
-    display: flex;
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &__link:hover,
+    &__link:focus {
+        background-color: var(--title-text-color);
+        }
+    &__link:hover .contact-soc__icon {
+        fill: var(--white-fons-color);
     }
+    &__link:focus .contact-soc__icon {
+        fill: var(--white-fons-color);
+    }
+    }
+    .contact-soc__link {
+        cursor: pointer;
+        width: 44px;
+        height: 44px;
+        background-color: var(--white-fons-color);
+        display: flex;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+    
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
 .contact-soc__icon {
     fill: var(--border-line);
     }
-.contact-soc__link:hover,
-.contact-soc__link:focus {
-    background-color: var(--title-text-color);
-    }
-.contact-soc__link:hover .contact-soc__icon {
-    fill: var(--white-fons-color);
-}
-.contact-soc__link:focus .contact-soc__icon {
-    fill: var(--white-fons-color);
-}
     /*.link {
         display: inline-block;
         margin-top: 16px;

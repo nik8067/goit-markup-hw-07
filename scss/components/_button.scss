@@ -20,8 +20,9 @@ button {
 
     color: var(--white-fons-color);
     background-color: var(--title-text-color);
-}
-.button.primary:hover,
-.button.primary:active {
+
+    &:hover,
+    &:active {
     background-color: var(--button-fons-color);
+}
 }
